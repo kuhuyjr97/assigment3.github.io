@@ -1,0 +1,98 @@
+@media (max-width:821px)  { 
+    /* reset all margin and padding */
+    body{
+        margin: 0; 
+        padding: 0;
+    }
+    /* smaller banner image */
+    #banner img{
+        height: 50vh;
+    }
+    /* hide name in middle nav */
+    #nav-bar .nav-mid{
+        display: none;
+    }    
+    #nav-bar .container a:nth-child(2){
+        border-right: none;
+    }
+    #nav-bar .container{
+        width: 100%;
+    }
+
+    /* about  */
+    #about{
+        height: auto;
+        margin-bottom: 100px;
+    }
+    #about .about-item{
+        padding: 50px 50px;
+        height: 100%;
+    }
+    #about .container{
+    }
+    #job-info .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    /* certificate */
+    .certification{
+        padding: 0;
+        width: 100%;
+    }
+    .certification .certification-blocks:nth-child(2),
+    .certification .certification-blocks:nth-child(3)
+    {
+        border-bottom: 1px solid orange;
+    }   
+    .certification .container{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .certification .border-right{
+        border-right: 1px solid orange;
+    }
+    .certification .certification-block{
+        flex-direction: column;    
+        width: 100%;
+        padding: 0;
+        margin: 40px 0 50px 0;    
+      }
+      .certification .certification-block img{
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .certification .certification-list {
+        width: 80%;
+      }
+      .certification .certification-grid{
+      }
+        /* project */
+    .project-section{
+        padding: 0;
+    }
+    .project-section .project-grid{
+        grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    }
+    .project-section .project-content{
+        padding: 0 10px 0 10px;
+    }
+            /* project- header */
+    
+    .project-list .project-header--flex{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    .project-list .project-header-item{
+        display: flex;
+        flex-direction: row;
+    }
+    #footer{
+        height: 10vh;
+    }
+    #footer .container{
+        height: 100%;
+    }
+ }

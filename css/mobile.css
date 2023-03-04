@@ -1,0 +1,120 @@
+  /* Media Query for Mobile Devices */
+  @media (max-width: 576px) {
+    /* smaller banner image */
+    
+    body{
+      width: 100%;
+    }
+    #banner img{
+        height: 36vh;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+    #banner h1{
+      font-size: 2rem ;
+    }
+    /* hide name in middle nav */
+    #nav-bar .nav-mid{
+        display: none;
+    }    
+    #nav-bar{
+        height: auto;
+    }
+    #nav-bar .container{
+        display: flex;
+        flex-direction: column;
+    }
+      /* about  */
+    
+    #about .container{
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 70px 0 70px;
+      height: auto;
+      
+    }
+    #about .about-item{
+      width: 100%;
+
+    }
+   /* kinh nghiem job-info */
+   #job-info .container{
+    width: 100%;
+    grid-template-columns: auto ;
+  }
+  #job-info .container-items{
+    box-sizing: border-box;
+    padding: 0 50px;
+    justify-content: left;
+  }
+  #job-info .grid-item--content{
+    padding-bottom: 0;
+  }
+  #job-info .grid-list{
+    justify-content:space-evenly;
+  }
+  /* certificate */
+  .certification{
+    padding: 0;
+    width: 100%;
+  }
+  .certification .container{
+    width: 100%;
+    grid-template-columns: 1fr ;
+    margin:  auto;
+  }
+ 
+  .certification .certification-block{
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid red;
+
+  }
+  .certification .certification-block img{
+    width: 90%;
+
+    align-items: center;
+    margin: 0 auto;
+  }
+  .certification .certification-list {
+    justify-content: center;
+    width: 90%;
+  }
+  /* project */
+  .project-section{
+    padding: 0;
+    width: 100%;
+  }
+  .project-section .project-grid{
+    grid-template-columns: 1fr;
+    row-gap: 0;
+
+  }
+  .project-section .project-content{
+    padding: 20px;
+  }
+  .project-section .project-list-header{
+    display: block;
+  }
+  .project-section .project-list-header span{
+    width: 30px;
+    margin-left: 20px;
+  }
+  .project-section .project-header--flex{
+    margin-top: 20px;
+  }
+
+  /* footer */
+  #footer{
+    height: 10vh;
+  }
+  #footer .container{
+    margin: 0;
+    height: 100%;
+  }
+  .footerr li {
+    display: flex;
+    align-items: center;
+  }
+}

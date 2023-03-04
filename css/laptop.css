@@ -1,0 +1,376 @@
+/* ------BASE CSS---- */
+
+:root{
+    --main-text-color: #363a41;
+    --bold-text-color: #33333b;
+    --title-text-color: #444246;
+    --border-color:gainsboro
+}
+
+* {
+    margin: 0px;
+}
+body{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+.title-text{
+    font-size: 33px;
+    color: var(--title-text-color);
+}
+
+.title-small-text{
+    font-size: 16px;
+    color: var(--title-text-color);
+}
+
+.main-text{
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+/* --------- */
+
+section > .container{
+    margin: auto;
+    display: block;
+
+    /* padding: 30px 50px; */
+}
+/* ----------BANNER IMAGE------ */
+#banner {
+    position: relative;
+    padding-bottom: 0;
+}
+
+#banner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 10% 0%;
+}
+#banner h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#banner p{
+    color: #f7f7f7;
+}
+
+.above-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.above-image p{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+/* -----------NAV BAR------ */
+#nav-bar {
+    text-align: center;    
+    padding: 0;
+    margin-top: -2px;
+    height: 40px;
+}
+
+#nav-bar .container{
+    width: 80%;
+    display:flex;
+
+    height: auto;
+    justify-content: space-between;
+}
+
+#nav-bar a{
+    padding: 0 33px 0 33px;
+    text-decoration: none;
+    color: var(--bold-text-color);
+    line-height: 40px;
+    border-left: 1px solid var(--border-color);
+}
+#nav-bar a:last-child,
+#nav-bar a:nth-child(2){
+    border-right: 1px solid var(--border-color);
+}
+
+#nav-bar p{
+    font-size: 10px;
+    color: var(--title-text-color);
+}
+#nav-bar i{
+    color: rgb(17, 113, 182);
+}
+
+#nav-bar .nav-mid{
+    padding: 0 50px;
+}
+
+/* ----------------------------------- */
+/* --------about ----------- */
+
+.bg-grey .container{
+    width: 100%;
+    display: flex;
+    height: 270px;
+
+}
+.bg-grey #target{
+    width: 50%;
+    background-color: #f5f5f5;
+
+}
+
+.bg-grey .about-item{
+    padding: 30px 45px;
+}
+.bg-grey .about-item h1{
+    padding-bottom: 35px;
+}
+.bg-grey #personal-info{
+    width: 50%;
+    background-color: #f0f0f0;
+}
+
+.bg-grey .mt-40 {
+    list-style: none;
+    padding-left: 0;
+}
+.bg-grey .icon-items {
+    padding-top: 20px;
+}
+
+.bg-grey .icon-items a{
+    color: #189cdb;
+    text-decoration: none;
+}
+
+/* ------grid------------- */
+#job-info .container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#job-info .grid-item--header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px 50px 20px;
+    position: relative;
+}
+
+#job-info .container-items{
+    border: 1px solid rgb(231, 224, 224);
+}
+
+#job-info .container-items .icon{
+    font-size: 40px;
+    color: gray;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.bottom-border{
+    display: flex;
+}
+.bottom-border--active{
+    border: 1px solid #189cdb;
+    width: 33px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.bottom-border--none{
+    border: 1px solid gainsboro;
+    width: 33px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+/* -------hobby list icon---- */
+.grid-item--content ul{
+    color: #189cdb;
+}
+
+.grid-item--content li{
+    padding-bottom: 50px;
+}
+ul .grid-item--content-skill{
+    padding-bottom: 15px;
+}
+
+ul p{
+    color: var(--main-text-color);
+}
+
+.grid-item--content{
+    padding-bottom: 50px;
+}
+
+
+.hobby-list{
+    list-style-type: none;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+}
+.hobby-list i{
+    font-size: 23px;
+    width: 25px;
+    border: 2px solid #1ba6ff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+.hobby-item{
+    justify-content: center;
+    text-align: center;
+}
+
+/* =-------giai thuong---- */
+.certification{
+    padding: 0 150px;
+}
+.certification .certification-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 50px;
+}
+
+.certification .container{
+    height: auto;
+   
+}
+
+.certification-block img{
+    width: 200px;
+}
+
+.bg-grey h1{
+    grid-column: 1 / -1;
+    padding-bottom: 25px;
+}
+
+.certification-block{
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.certification-block .certification-list{
+    margin-left: 35px;
+}
+
+.certification-list p{
+    margin-bottom: 10px;
+}
+
+.certification-block{
+    border-bottom: 1px solid grey;
+    padding-top: 50px;
+}
+.certification-block:last-child{
+    border: none;
+}
+/* ------du an-------- */
+
+img{
+    width: 100%;
+}
+.project-section{
+    box-sizing: border-box;
+
+}
+.project-section .project-grid{
+    box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.project-grid h1{
+    padding-top: 70px;
+    grid-column: 1 / -1;
+
+}
+.project-list .project-header--flex{
+    display: flex;
+}
+.project-list>p{
+    padding: 17px 0 17px 15px;
+    border-bottom: 1px solid gainsboro ;
+
+}
+.project-list-header{
+    display: flex;
+    margin-right: 120px;
+    padding-left: 17px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.project-list-header span{
+    background-color: #189cdb;
+    border-radius: 28%;
+    padding: 1px 8px;
+    color: #fff;
+}
+.project-list{
+    border: 1px solid gainsboro;
+}
+
+.project-list .project-content{
+    border: 1px solid gainsboro ;
+}
+
+.project-list .project-content{
+    padding: 9px;
+    display: flex;
+    height: auto;
+}
+.project-content .left-grid{
+    width: 30%;
+}
+.project-content .right-grid{
+    width: 70%;
+}
+
+/* footer */
+#footer .container{
+    height: 150px;
+    margin-top: 50px;
+}
+#footer ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer i{
+    background-color: #189cdb;
+    padding: 6px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+}
+#footer li{
+    padding-right: 30px;
+    color: grey;
+}
+#footer li:hover{
+    cursor: pointer;
+}
+ /* modify */
+ /* #job-info .hidden-content{
+    display: none;
+} */
+

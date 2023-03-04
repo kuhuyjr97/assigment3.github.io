@@ -1,0 +1,88 @@
+/* base css for grid */
+.row-full{
+    grid-row: 1 / 3;
+}
+
+.row{
+    padding: 10px;
+}
+
+
+.top-row {
+    height: 400px;
+
+  }
+  
+ .bottom-row {
+    height: 400px;
+  }
+  
+  #quote-2-high {
+    /* background-color: black; */
+    height: 820px;
+    padding-top: 10px;
+  }
+  /* navbar */
+  header{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+  }
+  header a{
+    text-decoration: none;
+  }
+  header:hover a{
+    background-color: gray;
+    color: #fff;
+  }
+  header .home-icon{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* goals */
+  .goal .icon{
+    margin-right: 50px;
+  }
+
+/* team */
+  .team-flex{
+    display: flex;
+  }
+/* scopes */
+
+.table-header{
+    text-transform: uppercase;
+}
+.scope{
+    display: flex;
+    margin: 20px 20px;
+}
+.scope-content{
+    margin-right: 2px;
+}
+/* priamry */
+.primary-list {
+    list-style: none;
+    margin-top: 20px;
+}
+.primary-list li{
+    display: flex;
+    padding: 7px 0 ;
+}
+/* timeline */
+.number-circle{
+    width:50px;
+    font-size: 25px;
+    height:50px;
+    background: violet;
+    text-align: center;
+    color: aliceblue;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon{
+    font-size: 30px;
+}
+
