@@ -1,76 +1,10 @@
 @media (max-width:576px)  { 
-   
+    #top-row{
+        height: auto;
+      }
+      #bottom-row{
+        height: auto;
+      }
         
        
-        .row{
-            padding-bottom: 20px;
-        }
-        .bottom-row{
-            padding-bottom: 20px;
-        }
-        #quote-2-high {
-            padding-top: 25px;
-            height: auto;
-            
-          }
-
-   
-        /* goal         */
-        .goal .list-group-item tr{
-            display: inline-flex;
-            flex-direction: column;
-        }
-        tr{
-            width: 100%;
-        }
-        .goal .icon{
-            font-size: 22px;
-            display: block;
-            text-align: center;
-        }
-        .goal span{
-            font-size: 23px;
-        }
-      /* scope */
-      .scope{
-        flex-direction: column;
-        margin: 20px 20px;
-        }
-         #bot-row{
-            padding-top: 0;
-        }
-    /* team */
-        .team-flex{
-            flex-direction: column;
-        }
-        .team-icon{
-            text-align: center;
-
-        }
-    
-      /* primary */
-   
-    .primary-icon{
-        text-align: center;
-    }
-    .primary-list li{
-        padding-top: 20px ;
-    }
-
-/* time */
-    
-
-     #quote-2-high{
-        padding: 2px;
-     }
-    #quote-2-high tr{
-            display: inline-flex;
-            flex-direction: column;
-    }
-    #quote-2-high table{
-        border-bottom: 1px dashed aqua;
-        width: 100%;
-        margin-top: 20px;
-    }
-      
 }

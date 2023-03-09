@@ -1,8 +1,11 @@
-@media (max-width:821px)  { 
+@media (max-width:992px)  { 
     /* reset all margin and padding */
     body{
         margin: 0; 
         padding: 0;
+    }
+    *{
+        box-sizing: border-box;
     }
     /* smaller banner image */
     #banner img{
@@ -12,13 +15,15 @@
     #nav-bar .nav-mid{
         display: none;
     }    
-    #nav-bar .container a:nth-child(2){
-        border-right: none;
-    }
+  
+    
     #nav-bar .container{
-        width: 100%;
+        max-width: 90%;
+        height: 100%;
     }
-
+    #nav-bar .border-on{
+        border: 1px solid var(--border-color);
+       }
     /* about  */
     #about{
         height: auto;
@@ -35,38 +40,19 @@
         grid-template-rows: auto;
     }
     /* certificate */
-    .certification{
-        padding: 0;
-        width: 100%;
-    }
-    .certification .certification-blocks:nth-child(2),
-    .certification .certification-blocks:nth-child(3)
-    {
-        border-bottom: 1px solid orange;
-    }   
-    .certification .container{
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-    }
-    .certification .border-right{
+    .border-right-orange{
         border-right: 1px solid orange;
+        margin-bottom: 20px;
     }
-    .certification .certification-block{
-        flex-direction: column;    
-        width: 100%;
-        padding: 0;
-        margin: 40px 0 50px 0;    
-      }
-      .certification .certification-block img{
-        width: 90%;
-        align-items: center;
-        margin: 0 auto;
-      }
-      .certification .certification-list {
-        width: 80%;
-      }
-      .certification .certification-grid{
-      }
+  
+    .border-bottom-orange{
+        border-bottom: 1px solid orange;
+    }
+    .border-top-orange{
+        border-top: 1px solid orange;
+    }
+  
+   
         /* project */
     .project-section{
         padding: 0;

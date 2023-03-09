@@ -1,38 +1,15 @@
-@media (max-width:768px)  { 
-    .hero{
-        height: auto;
-    }
-    .goal .list-group-item tr{
-        display: inline-flex;
-        flex-direction: column;
-    }
-    tr{
-        width: 100%;
-    }
-    .goal .icon{
-        font-size: 22px;
-        display: block;
-        text-align: center;
-    }
-    .goal span{
-        font-size: 23px;
-    }
-    /* time */
-    
-
-    #quote-2-high{
-        padding: 20px;
-        height: auto;
-     }
-    #quote-2-high tr{
-            display: inline-flex;
-            flex-direction: column;
-    }
-    #quote-2-high table{
-        border-bottom: 1px dashed aqua;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    
+@media (max-width:992px)  { 
+  *{
+    box-sizing: border-box;
+  }
+  #top-row{
+    height: auto;
+  }
+  #bottom-row{
+    height: auto;
+  }
+  .full-col{
+    height: auto;
+  }
+  
 }
